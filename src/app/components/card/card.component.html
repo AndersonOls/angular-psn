@@ -1,5 +1,7 @@
 <a href="#" class="relative border-4 border-gray-600 rounded-lg w-80 h-[500px] flex overflow-hidden mt-3">
-    <img class="card_img min-w-full min-h-full" src="assets/bt-5.jpg" alt="bt 5">
-    <app-card-label gameLabel="Digital"></app-card-label>
-    <app-card-pricing gameType="Digital PS4" gamePrice="R$ 399,00"></app-card-pricing>
+    <img class="card_img min-w-full min-h-full" 
+    [src]=[gameCover] 
+    alt="bt 5">
+    <app-card-label gameLabel={{gameLabel}}></app-card-label>
+    <app-card-pricing gameType="{{gameType}}" gamePrice="{{gamePrice}}"></app-card-pricing>
 </a>
